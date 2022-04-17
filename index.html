@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>逻辑推理小问题</title>
+  <script>
+  function sayHello(){
+   var response = prompt ("What's your name?");
+   alert("Hello," + response + "hope you can enjoy this game !")
+ }
+ sayHello()
+
+  function A(){
+    document.getElementById("A").innerHTML="A、对不起，不是正确答案哦，再想想吧！"
+  }
+  function B(){
+    document.getElementById("B").innerHTML="B、恭喜你，回答正确，你太棒了！"
+  }
+  function C(){
+    document.getElementById("C").innerHTML="C、对不起，不是正确答案哦，再想想吧！"
+  }
+  function D(){
+    document.getElementById("D").innerHTML="D、对不起，不是正确答案哦，再想想吧！"
+  }
+</script>
+</head>
+<body>
+  <h1>欢迎来到一个逻辑推理小问题！</h1>
+  <p>某仓库失窃，四个管理员的供词如下：</p>
+  <p>甲：我们四个都没作案</p>
+  <p>乙：我们中有人作案</p>
+  <p>丙：乙和丁至少有一人没做案</p>
+  <p>丁：我没做案</p>
+  <p>如果四人中有两人说的是真话，两人说的是假话，则下列哪项断定成立？</p>
+<button id="A" onclick="A()" class="A">A、说真话的是甲和丁</button>
+<button id="B" onclick="B()" class="B">B、说真话的是乙和丙</button>
+<br>
+<button id="C" onclick="C()" class="C">C、说真话的是甲和丙</button>
+<button id="D" onclick="D()" class="A">D、说真话的是乙和丁</button>
+</body>
+</html>
